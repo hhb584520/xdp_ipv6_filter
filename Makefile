@@ -13,6 +13,7 @@ CLANG_FLAGS = -I. -I$(KDIR)/arch/$(ARCH)/include \
 	-I$(KDIR)/include/generated/uapi \
 	-include $(KDIR)/include/linux/kconfig.h \
 	-I$(KDIR)/tools/testing/selftests/bpf/ \
+	-I/usr/include/bpf/ \
 	-D__KERNEL__ -D__BPF_TRACING__ -Wno-unused-value -Wno-pointer-sign \
 	-D__TARGET_ARCH_$(ARCH) -Wno-compare-distinct-pointer-types \
 	-Wno-gnu-variable-sized-type-not-at-end \
